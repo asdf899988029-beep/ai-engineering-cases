@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="行业大模型训练与优化案例：从专业文档到可验证的能力提升。根据原14页对外脱敏材料整理的6页摘要。">
+  <title>行业大模型训练与优化案例｜案例摘要</title>
+  <link rel="stylesheet" href="../assets/materials.css">
+</head>
+<body>
+  <header class="toolbar">
+    <a class="back-link" href="../index.html#materials"><span aria-hidden="true">←</span> 返回资料中心</a>
+    <div class="toolbar-actions">
+      <a href="../assets/materials/model-training-case.pptx" download>原版 PPT <span>14 页</span></a>
+      <a class="primary-link" href="../assets/materials/model-training-brief.pdf" download>下载摘要 PDF</a>
+      <button type="button" onclick="window.print()">打印</button>
+    </div>
+  </header>
+  <main aria-label="行业大模型训练与优化案例摘要，共六页">
+    <div class="deck-caption"><span>行业大模型训练与优化案例 · 案例摘要</span><span>根据原 14 页对外脱敏材料整理 / 6 页</span></div>
+
+    <div class="page-frame"><section class="slide cover" aria-label="第1页，客户挑战">
+      <div class="eyebrow"><span class="brand-mark">E</span> ENGINEERING CASE STUDY <span class="edition">案例摘要 · 01</span></div>
+      <div class="cover-layout">
+        <div class="cover-copy">
+          <p class="pill">某高端装备制造企业案例</p>
+          <h1>行业大模型<br><em>训练与优化案例</em></h1>
+          <p class="cover-subtitle">从专业文档到可验证的能力提升</p>
+          <p class="cover-description">客户拥有大量专业手册、标准和历史资料。数据结构不统一，难以直接支撑行业模型训练与持续迭代。</p>
+        </div>
+        <div class="cover-visual">
+          <div class="visual-label">客户挑战与项目目标</div>
+          <div class="challenge-row"><b>01</b><div><h2>知识分散</h2><p>手册、标准和历史资料分布在不同系统中，格式与质量差异明显。</p></div></div>
+          <div class="challenge-row"><b>02</b><div><h2>标注投入高</h2><p>专家时间有限，纯人工整理难以兼顾规模、速度和一致性。</p></div></div>
+          <div class="challenge-row"><b>03</b><div><h2>回答缺乏依据</h2><p>通用模型对行业术语理解不足，回答容易出现遗漏或无依据扩展。</p></div></div>
+          <div class="challenge-row"><b>04</b><div><h2>效果难量化</h2><p>缺少统一基准与对照评测，模型提升无法稳定复现和解释。</p></div></div>
+          <div class="outcome-ribbon"><span>项目目标</span><strong>知识可追溯、训练可复现、效果可衡量和团队可持续运营</strong></div>
+        </div>
+      </div>
+      <footer class="slide-footer"><span>依据原材料第 1、3 页整理 · 客户信息已脱敏</span><span>01 / 06</span></footer>
+    </section></div>
+
+    <div class="page-frame"><section class="slide" aria-label="第2页，量化成效">
+      <div class="section-kicker">01 / 评测方法与量化结果</div>
+      <h2 class="slide-title">量化成效</h2>
+      <p class="slide-intro">1,000条测试问答样本。基座与SFT回答随机映射。独立裁判模型在统一标准下评分。</p>
+      <div class="results-grid">
+        <div class="score-panel">
+          <div class="metric-label">平均提升</div>
+          <div class="hero-number">+16.0<span>分</span></div>
+          <div class="bar-group"><div class="bar-label"><span>基座模型</span><b>65.94</b></div><div class="bar-track"><div class="bar baseline" style="width:65.94%"></div></div></div>
+          <div class="bar-group"><div class="bar-label"><span>SFT模型</span><b>81.975</b></div><div class="bar-track"><div class="bar trained" style="width:81.975%"></div></div></div>
+          <p class="panel-note">来源：项目测试报告。平均提升16.035分。</p>
+        </div>
+        <div class="secondary-metrics">
+          <article class="metric-card mint"><div class="metric-label">显著提升</div><div class="metric-number">88.2<span>%</span></div><p>样本得分提高至少5分</p></article>
+          <article class="metric-card"><div class="metric-label">项目环境下的一轮工程验证</div><div class="metric-number time"><span>约</span>32<span>h</span><i>→</i><span>约</span>3.5<span>h</span></div><p>训练时长由约32小时降至约3.5小时，效率提升近9倍。</p></article>
+        </div>
+      </div>
+      <div class="precision-note"><b>评测口径</b><span>所有结果来自统一推理参数下的对照评测。按5分阈值计算，Good Rate为88.2%。</span></div>
+      <footer class="slide-footer"><span>依据原材料第 2、6、10 页及第 10 页备注整理</span><span>02 / 06</span></footer>
+    </section></div>
+
+    <div class="page-frame"><section class="slide" aria-label="第3页，方案总览">
+      <div class="section-kicker">02 / 数据工程与训练优化</div>
+      <h2 class="slide-title">方案总览</h2>
+      <p class="slide-intro">方案以数据质量和可验证改进为主线，将专业文档处理、知识组织、监督微调和对照评测串成一条可重复运行的工程链路。</p>
+      <div class="process-grid">
+        <article class="process-card"><div class="step-number">01</div><h3>数据工程自动化</h3><p>对OCR文本执行清洗、质量准入和结构化处理，分离合格、拒绝与失败记录，支持批量运行和断点续跑。</p><div class="card-output">文本准入与清洗</div></article>
+        <article class="process-card"><div class="step-number">02</div><h3>可审计知识资产</h3><p>抽取专业术语、领域归属和有证据支持的关系，形成局部知识单元，并保留来源信息供抽检与追溯。</p><div class="card-output">术语和关系抽取</div></article>
+        <article class="process-card"><div class="step-number">03</div><h3>模型训练与优化</h3><p>将知识单元转换为对话训练样本，固化训练配置，并通过样本打包、参数基线和退化样本回流提升效率与稳定性。</p><div class="card-output">训练样本生成</div></article>
+        <article class="process-card"><div class="step-number">04</div><h3>量化评测闭环</h3><p>在统一推理条件下对基座模型和行业SFT模型进行匿名盲评，按领域分析提升、持平和退化样本。</p><div class="card-output">退化治理</div></article>
+      </div>
+      <div class="evidence-strip"><div class="evidence-tag">原文证据约束</div><p>每条知识单元关联来源文本。模型只能围绕命中证据生成术语、关系和解释。</p></div>
+      <div class="process-bottom"><span><b>可审计的数据资产</b> 来源信息可按交付口径保留。</span><span><b>失败可恢复</b> 支持断点续跑和问题样本复核，减少重复计算。</span></div>
+      <footer class="slide-footer"><span>依据原材料第 2、4、5、7、8、11 页整理</span><span>03 / 06</span></footer>
+    </section></div>
+
+    <div class="page-frame"><section class="slide" aria-label="第4页，评测方法">
+      <div class="section-kicker">03 / 评测方法与量化结果</div>
+      <h2 class="slide-title">评测方法</h2>
+      <p class="slide-intro">固定随机种子构建1,000条可复现问答。推理阶段统一最大输出长度和关键解码参数。</p>
+      <div class="evaluation-layout">
+        <div class="evaluation-steps">
+          <div class="evaluation-step"><span>1</span><div><h3>统一基准</h3><p>固定随机种子构建1,000条可复现问答。</p></div></div>
+          <div class="evaluation-step"><span>2</span><div><h3>推理阶段</h3><p>推理阶段统一最大输出长度和关键解码参数。</p></div></div>
+          <div class="evaluation-step"><span>3</span><div><h3>匿名盲评</h3><p>系统随机将基座与SFT回答映射为A或B。</p></div></div>
+          <div class="evaluation-step"><span>4</span><div><h3>退化治理</h3><p>以5分差值划分提升、持平和退化。团队按领域聚合退化样本，再回溯训练数据、系统提示和答案长度。</p></div></div>
+        </div>
+        <div class="evaluation-right">
+          <div class="rubric-panel"><div class="metric-label">独立裁判模型依据标准答案评估</div><div class="rubric-grid"><span>准确性</span><span>完整性</span><span>术语规范</span><span>无依据扩展</span></div></div>
+          <div class="domain-panel"><b>跨领域一致性</b><p>六类知识域的SFT平均分均高于基座模型。</p><div class="domain-stat"><strong>+16.1<small>分</small></strong><span>按领域等权计算<br>宏平均提升约</span></div></div>
+          <p class="evaluation-note">每个分数都能回到具体问题、标准答案、模型回答和裁判理由，便于业务复核。</p>
+        </div>
+      </div>
+      <footer class="slide-footer"><span>依据原材料第 2、10—12 页整理 · 宏平均与全样本平均为不同统计口径</span><span>04 / 06</span></footer>
+    </section></div>
+
+    <div class="page-frame"><section class="slide" aria-label="第5页，工程化交付">
+      <div class="section-kicker">04 / 数据工程与训练优化</div>
+      <h2 class="slide-title">工程化交付</h2>
+      <p class="slide-intro">交付重点是可运行的方法体系，包括配置、质量门槛、复现步骤和评测脚本，降低后续维护与交接成本。</p>
+      <div class="delivery-grid">
+        <article><div class="delivery-index">A</div><h3>标准接口与批处理</h3><p>通过兼容接口接入模型服务，统一运行参数、批量处理、失败重试和输出格式，便于集成现有数据与训练环境。</p></article>
+        <article><div class="delivery-index">B</div><h3>可审计的数据资产</h3><p>每条通过准入的记录形成局部知识单元，并输出为SFT对话或Community数据。来源信息可按交付口径保留。</p></article>
+        <article><div class="delivery-index">C</div><h3>训练策略</h3><p>统一系统提示与消息格式；固定随机种子和复现配置；保留来源与质量元数据。</p></article>
+        <article><div class="delivery-index">D</div><h3>评测结果可解释</h3><p>每个分数都能回到具体问题、标准答案、模型回答和裁判理由，便于业务复核。</p></article>
+        <article><div class="delivery-index">E</div><h3>数据飞轮与训练飞轮</h3><p>操作手册覆盖小样本试跑、正式生成、训练复现、结果评测和问题回流。团队可独立更新数据并完成下一轮迭代。</p></article>
+        <article><div class="delivery-index">F</div><h3>团队具备自主迭代能力</h3><p>通过运行手册、配置基线和评测流程，客户团队可独立完成数据更新与模型复验。</p></article>
+      </div>
+      <footer class="slide-footer"><span>依据原材料第 2、6、8、9、12 页整理</span><span>05 / 06</span></footer>
+    </section></div>
+
+    <div class="page-frame"><section class="slide closing" aria-label="第6页，经验与下一步">
+      <div class="section-kicker">05 / 经验沉淀与下一步</div>
+      <h2 class="slide-title">经验与下一步</h2>
+      <p class="slide-intro">评测显示模型在所有知识域均有提升，但收益并不均衡。标准规范和仿真建模相关样本仍是下一轮优化重点。</p>
+      <div class="closing-layout">
+        <div class="fit-panel"><div class="panel-title">业务与工程价值</div><div class="fit-row"><span>01</span><div><h3>训练数据可持续更新</h3><p>新文档可沿同一质量流程进入知识抽取和训练数据生成，减少重复整理工作。</p></div></div><div class="fit-row"><span>02</span><div><h3>评测结果可解释</h3><p>每个分数都能回到具体问题、标准答案、模型回答和裁判理由，便于业务复核。</p></div></div><div class="fit-row"><span>03</span><div><h3>薄弱领域可定位</h3><p>分域结果显示不同知识域收益不均，为下一轮补数、清洗和复训提供明确优先级。</p></div></div><div class="fit-row"><span>04</span><div><h3>团队具备自主迭代能力</h3><p>通过运行手册、配置基线和评测流程，客户团队可独立完成数据更新与模型复验。</p></div></div></div>
+        <div class="next-panel"><div class="panel-title">下一步</div><p class="planning-label">以下为原材料中的下一步规划</p><ul><li><b>优先治理薄弱领域</b><span>补充标准规范和仿真建模材料，复核退化样本中的术语歧义、答案长度和证据缺口。</span></li><li><b>扩展多模态输入</b><span>在文字流程稳定后，逐步引入表格、图纸和设备影像，并为每类输入建立独立质量门槛。</span></li><li><b>强化轻量化部署</b><span>结合量化、缓存和检索增强，评估私有环境中的响应时延、资源占用和答案一致性。</span></li><li><b>持续建设知识资产</b><span>建立版本、来源和质量记录，保持训练集、评测集与业务知识更新节奏一致。</span></li></ul></div>
+      </div>
+      <footer class="slide-footer"><span>依据原材料第 2、12—14 页整理 · 欢迎交流。本案例已按外部展示口径脱敏。</span><span>06 / 06</span></footer>
+    </section></div>
+  </main>
+  <footer class="web-footer">本摘要根据原 14 页对外脱敏材料重新编排；原始 PPT 保持原样，PDF 为本摘要的独立导出版本。</footer>
+  <script>
+    function scaleSlides() {
+      document.querySelectorAll('.page-frame').forEach(function(frame) {
+        var scale = Math.min(1, frame.clientWidth / 1280);
+        frame.style.height = (720 * scale) + 'px';
+        frame.querySelector('.slide').style.transform = 'scale(' + scale + ')';
+      });
+    }
+    window.addEventListener('resize', scaleSlides);
+    scaleSlides();
+  </script>
+</body>
+</html>
